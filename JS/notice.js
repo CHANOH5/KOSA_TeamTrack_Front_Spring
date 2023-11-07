@@ -9,11 +9,9 @@ $(()=>{
     $.ajax({
         url: backURL+'/mainnotice',
         method : 'get',
-        data : `teamNo=${teamNo}&loginedId=${loginedId}`,
+        data : `teamNo=${teamNo}&id=${loginedId}`,
         success: (responseJSONObj)=>{
-            //alert(responseJSONObj.memStatus)
             if(responseJSONObj.memStatus == '0'){
-                //alert('여기까지 와요')
                 $('div.main_topline>div.rightspace>button[name=cancel]').hide()
                 $('div.writebutton>button').hide()
             }

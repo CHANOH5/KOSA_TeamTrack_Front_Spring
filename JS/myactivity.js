@@ -26,7 +26,7 @@ $(()=>{
     $.ajax({
         url: backURL+'/myactivity',
         method : 'get',
-        data : `teamNo=${teamNo}&loginedId=${loginedId}`,
+        data : `teamNo=${teamNo}&id=${loginedId}`,
         success: (responseJSONObj)=>{
             const r = responseJSONObj
 
